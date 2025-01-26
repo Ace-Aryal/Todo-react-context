@@ -9,6 +9,7 @@ function TodoForm() {
         e.preventDefault()
         if(!todo) return 
         addTodo({
+            id : Date.now(),
             todo ,
             completed : false
         })
